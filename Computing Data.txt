@@ -1,0 +1,171 @@
+Now that you know how to load and save 
+data and put your data in matrices and so on, in this video I'd like to show you 
+how to do computational operations on data. 
+And later on we'll, we'll be using the source of computational operations to 
+implement learning algorithms. Let's get started. 
+Here's my Octave window. Let me just click the initialize some 
+variables, to use for our examples. Set A to be a two by two matrix, and set 
+B to a two by two matrix, and let's set C to a 2 by 2 matrix, like so. 
+Now, let's say I want to multiply two of my matrices. 
+So, let's saw I want to compute a * c I just type a * c. 
+So it's a three by two matrix * a 2 by 2 matrix. 
+This gives me this 3 by 2 matrix. You can also do element wise operations. 
+And do a. * b. 
+And what this will do is, it'll take each element of a, and multiply it by the 
+corresponding elements of b. So that's a * b. 
+That's a. * b. 
+So, for example, the first first element gives. 
+One times eleven which gives eleven. The second element gives 2 * 12 which 
+gives 24 and so on. So does the element wise multiplication 
+of two matrices and in general the p grid tends to, is usually used to denote 
+element wise operations and auto. So here's a matrix A and Im going to do 
+A.iii this gives me the mul- the element wise squaring of A so you know, one 
+square is one, two square is four and so on. 
+Let's set V to a vector, let's set V as 1, 2, 3 as a colon vector. 
+You can also do one dot over V to do the element Y's reciprocal of V. 
+So this gives me 1 / 1, 1 / 2, and 1 / 3. This works super matrices, so 1. 
+/ over a gives me that element y, your inverse, of a. 
+and once again the p-ratio gives us a clue that this is elements wise 
+operation. You can also do things like log V, this 
+is element wise logorithm of the of the, the, V, E to the V, let's see of, base E 
+exponentiation of v elements. So, this is E, this is E squared, E cubed, because, 
+this was V, so this, and, I can also do absent V, to take the 
+element wise absolute value of V, so here, you know V was all positive to aps 
+take minus one to minus three. The element wise absolute value gives me 
+back these non-negative values and negative v gives me the minus of v. 
+This is the same as negative one times v, but usually you just write negative v 
+instead of negative one times v. And . 
+What else can you do here is another neat trick. 
+So lets see, lets say I want to take V and increment each others elements by 
+one, well what we need to do is by constructing a three x one. 
+Vector this old ones and adding that to V, so if I do that this increments v by 
+from 1, 2, 3 to 2, 3, 4. The way I did that was length of b is 3 
+so 1's length would be by one. This is let 1's of 3 by 1 So, that's 1's 
+three by one. On the right, and what I did was V plus 
+one is V by one, which is adding this vector of all 1s to V and so this 
+increments V by one and you, another simpler way to do that, is actually type 
+V plus one, right, so just V and V plus one also means to add to one element wise 
+to each of my elements of V. Now. 
+Let's talk about more operations. So here's my matrix A. 
+If you want to write A transpose the way to do that is to write A prime. 
+That's the, apostrophe symbol. It's the left quote. 
+So, in, in on your keyboard you probably have a left quote, and a right quote. 
+So this is, excuse. This is actually a standard quotation 
+mark. Is, type A transpose this gives me the, 
+you know, the transpose of my matrix A. And of course, A transpose. 
+If I transpose that again then I should get back my matrix A. 
+Some more useful functions let's say lowercase a us 115 20.5, so it's a one by 
+four matrix. Let's say I say vow is max of A, this 
+returns the maximum value of A which in this case is fifteen and I can do vow end 
+max A and this returns vow and end which are going to be the maximum value of A 
+which is fifteen as well as the index. So is the element number two of A that 
+was fifteen so ends is my index in this. just as a warning that you do max A. 
+Where A is a matrix, what this does is this, this actually does the column wise 
+maximum, but I'll say a little bit more about this in a second. 
+So using this example, the variable lower case, a. 
+If I do a less than three this does the element y's operation, element y's 
+comparison. So the first element of a is less than 
+three so this gives us one, second element of a is not less than three so 
+this device is zero cause it's false. The third and fourth elements of r I 
+meant less than three, 34 elements are less than three so there's just one, one, 
+so this does the elementwise comparison of all four elements of the variable 
+lowercase A to three and the returns true or false depending on whether or not it's 
+less than three. Now, if I defined a less than three, this 
+will tell me which are the elements of a. The, the variable A are less than three, 
+and in this case the first, third and fourth elements are less than three. 
+For my next example, let me set A to be equal to magic to be the magic function, 
+returns, let's say, help magic. The magic function returns functions called magics 
+returns these matrices call magic squares, they have this, 
+yeah mathematical property that's all of their rows and columns and diagonals sum 
+up to the same thing. So you know, it's not actually useful for 
+machine learning as far as I know but I'm, I'm just using this as a convenient 
+way. You know, to generate a 3 by 3 matrix. 
+And, and these magic squares anyway we have the property that each row, each 
+column and the diagonals all add up to the same thing. 
+So it's kind of a, mathematical construct. I use magic, I use this magic 
+function only when I'm doing demos or when I'm teaching Octave, like this and I 
+don't actually use it for any, you know useful machine only application. 
+But let's see if I type RC equals find A greater than or equals seven, this finds 
+all the elements of A, that are greater than or equal to seven. 
+And so, RC sends row and columns. So the 1-1 element is greater than seven. 
+The 3-2 element is greater than seven and the 2-3 element is greater than seven. 
+So let's see. The 2-3 element, for example, is a 2-3 is 
+seven is this element. Out here, and that is, indeed, greater 
+than or equal to seven. By the way, I actually don't even 
+memorize, myself, what these fine functions do. 
+And what all of these things do myself. And whenever I use the fine function, 
+sometimes I forget myself exactly what it does. 
+And you know, I to, like, help find, to look up the document. 
+Okay just two more things and I'll quickly show you, one is the sum 
+function. So here's my A I'm going to type sum A 
+which adds up all the elements of A and if I want to multiply them together I 
+type prod, A prod sense of product and this returns the product of these four 
+elements of A. four A rounds down these elements of A so 
+0.5 is rounded down to zero and seal or sealing A gets rounded up to the nearest 
+integers so 0.5 gets rounded up to 1. You can also let's see. 
+Let me type rand(3), this generates a 3 by 3 matrix. 
+If I type max rand(3), rand(3) what this does is it takes the element wise maximum 
+of a two random 3 by 3 matrices. So, you notice, all of these numbers tend 
+to be a bit on the large side. Because each of these is actually the max 
+of a randomly of, of element Y's max of two randomly generated matrices. 
+This is, this was my magic number, this was my magic square three by three A. 
+Let's say I type max A and then this will be eight. 
+Open close square brackets, comma one. What this does is this takes the 
+column-wise maximum. So, the max of the first column is eight, 
+the max of the second column is nine, and the max in the third column is seven. 
+This one means to take the max along the first dimension of A. 
+In contrast if I were to take max A, this funny notation too, then this takes this 
+per row maximum, so the max of the first row is eight, max of second row is seven, 
+max of the third row is nine and so this allows you to take maxes, either, you 
+know, per row, or per column. And if you want to and remember, it 
+defaults to a column like wise element. So you won't find. 
+If you want to find the maximum element in the entire matrix A. 
+You can type max of max of A. Like so, which is 9 or you can turn A 
+into vector and type max of A: like so. And this treats this as a vector. 
+And takes the max of, max elements of that vector. 
+Finally, let's set A to be a 9 by 9 magic square, 
+so remember the magic square has this property that every column and every row 
+sums the same thing and also the diagonals. 
+So here's a nine by nine may magic square, so let me do sum A1 so this does 
+a per column sum so I'm going to take each column of A and ad them up and this, 
+you know let's just verify that indeed for a nine by nine magic square every 
+column adds up to 369, adds up to the same thing. 
+Now let's do the row-wide sum so the sum A, comma 2 and this sums up each row of 
+A, and indeed each row of A also sums up to 369. 
+Now, let's sum the diagonal elements of a and make sure that they, that, that also 
+sums to the same thing. So, what I'm going to do is construct a 9 
+by 9 identity matrix. That's I9 and I'm going to take a and 
+construct, you know multiply A, element-wise. 
+So here's my matrix A. I'm going to do a * I9. 
+And what this will do is take the element-wise product of these two 
+matrices. And so this should wipe out everything in 
+a except for the diagonal entries. And now I'm going to do sum, sum of a of 
+that. And this gives me the 
+sum of this, these diagonal elements. And indeed, it is 369 you can sum up the 
+other diagonal as well. So the sort of top left to bottom right, 
+you can sum up the opposite diagonal from bottom left to top right. 
+the sum, the, the commands for this is somewhat more cryptic. 
+You don't need to know this. I'm just showing you this in case any of 
+you are curious. But let's sese flip U, flip UD stands for 
+flip up down. But if you do that, that turns out to sum 
+up the elements and the opposites of the other diagonal that also sums up to 369. 
+Here let me show you. Whereas I9 is this matrix. 
+Flip up down of I9 you know takes the identity matrix and flips it vertically. 
+So you end up with, excuse me flip UD end up with 1's on this opposite diagonal as 
+well. Just one last command and then that's it, 
+and then that'll be it for this video. Let's set A to be the magic, three by 
+three magic square game. If you want to invert a matrix, you type 
+P inv A. this is typically called the pseudo 
+inverse, but it doesn't matter. Just think of it as basically the inverse 
+of A, and that's the inverse of A. And so I can set, you know, temp equals P 
+inv of A and [INAUDIBLE] temp times A. This is indeed the identity matrix with 
+essentially ones on the diagonals and zero. 
+It was on the off diagonals up to a numerical round off. 
+So that's it for how to do different computational operations on the data 
+matrices. and after running a learning algorithm, 
+often one of the most useful things is to be able to look at your results. 
+Or to plot or visualize your results. And in the next video I'm going to very 
+quickly show you how again with one or two lines of code, using Octave. You can 
+quickly visualize your data or plot your data. 
+And use that to better understand you know, what your learning algorithms are 
+doing.

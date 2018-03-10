@@ -1,0 +1,183 @@
+You now know a bunch about machine 
+learning. In this video, I'd like to teach you a 
+programming language, Octave, in which you'll be able to very quickly implement 
+the learning algorithms we've seen already and the learning algorithms we'll 
+see later in this course. In the past, I've tried to teach machine 
+learning using a live variety of different programming languages including 
+C+++, Java Python NumPy, R and also Octave. 
+And what I've found is that students were able to learn the most productively learn 
+the most quickly and prototype the algorithms most quickly, using a 
+relatively high level language like Octave. 
+In fact . what I often see in Silicon Valley is 
+that if, even if you need to build, if you 
+want to build a large scale deployment of a learning algorithm, 
+what people will often do is prototype in the language like Octave, which is a 
+great prototyping language. So you can sort of get your learning 
+algorithms working quickly. And then, only if you need a very large 
+scale deployment of it, only then spend your time reimplementing 
+the algorithms in C+++ or Java, or some other language like that. 
+Because one of the lessons we've learned is that program a time or developer time, 
+that is your time, you know, the machine learning experience 
+time is incredibly valuable. And if you can get your learning happens 
+to work more quickly in Octave, then overall, you have a huge time savings by 
+first developing the algorithms in Octave, and then implementing in like 
+maybe C++ or Java only after we have the ideas working. 
+The most common prototyping languages I see people use for machine learning are 
+Octave, Matlab, Python NumPy, and R. 
+Octave is nice since it's free open source and Matlab works well, too, but is 
+expensive to many people. But if you have access to a copy of 
+Matlab, you can also use Matlab for this class. 
+If you know Python NumPy, or if you know R, I do see some people use it. 
+But what I see is that people usually end up developing somewhat more slowly in, 
+you know, mul, these languages because the Python NumPy syntax is just slightly 
+concur than the Octave syntax. and so because of that and because we're 
+releasing starter code in Octave I strongly recommend that you not try to do 
+the programming exercises in this class and NumPy R, but that I do recommend that 
+you instead do the programming exercises for this class in Octave instead. 
+What we're going to do in this video is go through a list of commands fairly 
+quickly, and the goal is to show you the range of commands and the range of things 
+you can do in Octave. The course website will have a transcript 
+of everything I do. And so after watching this video, you can 
+refer to the, to the transcript posted on the course website when you want to find 
+a command. Briefly, what I recommend you do is first 
+watch the tutorial videos. And after watching, 
+you know, to the end, then install Octave on your computer. 
+And finally, go to the course website, download the transcript of the things you 
+see in this session and type in whatever commands seem interesting to you in to 
+the octaves of running on your own computer so that you can see it work for 
+yourself. And with that, let's get started. 
+Here's my Windows desktop, and I'm going to start an Octave. 
+And I'm now in octave and, and there's my octave prompt. 
+Let me first show you the elementary operations you can do in octave. 
+So you can type in 56, + 6, that gives you the answer of 11. 
+3 - 2, 5 * 8, 1/2, 2^6 is 64. 
+So, those are the elementary math operations. 
+You can also do logical operations. So, 1 = 2 this evaluates to false. 
+The percent command here is means a comment. So, 1 = 2 evaluates to false 
+which is represented by zero. One not equals to two, this is true so 
+that returns one, note that the not equal sign is tilde equals symbol and not than 
+equals which is what some other program languages use. 
+Let's see logical operations one and zero, use a double ampersand sign to 
+denote the logical and, and that evaluates the false one over 
+zero. z or operation, 
+and that evaluates to true. And I can xor one and zero, and that 
+evaluates to one. This thing over on the left is octave 
+3.2.4.exe:11. This is the default octave prompt. 
+So it shows the what? a version in Octave, and so on. 
+if you don't want that problem, there's a somewhat cryptic command, PS, quote, 
+greater than, greater than, and so on, that you can use to change the prompt. 
+And I guess this quote of string in the middle your quote greater than, greater 
+than space, that's what I prefer my octave prompt to 
+look like. So, if I hit Enter oops, excuse me. 
+Like so, PS1 like so, 
+now my octave prompt is changed to the greater than, greater than sign which, 
+you know, looks quite a bit better. Next, let's talk about octave variables. 
+I can take the variable a and assign it to three, and hit Enter. And now, a is 
+equal to three. If you want to assign a variable but you 
+don't want it to print out the result, if you put a semicolon, the semicolon 
+suppresses the print the, the print output. So, if we do that, Enter, it 
+doesn't print anything. Whereas a equals three, you know, makes 
+it prints it out, whereas a equals three semicolon doesn't print anything. 
+I can do string assignments, b equals hi. now, if I just enter b, it prints out the 
+variable b, so b is the string hi. 
+c3, equals three greater than or equal to one. 
+So now, c evaluates to true. If you want to print out or display a 
+variable, here's how you go about it. Let me set api. 
+equals pi. And if I want to print a, I can just type 
+a like so, and it'll print it out. For more complex printing, there's also 
+the disp command which sense the displays, when display a, just prints out 
+a like so. You can also display strings, so disp 
+print f, two decimals. The percent of 0.2f, a like so. 
+And this print out the string, 2 decimals: 3.14. 
+This is kind of a old, old style C syntax for those of you that have coded in C 
+before, this is essentially the syntax you used to print strings. 
+So the, sprint f generator generates a, generates a string that is this, you 
+know, two decimals 3.14 one for string. This percent 0.2f means substitute a into 
+here, sharing it with, you know, two digits after the decimal point. And the 
+disp takes this string that's generated by this print f command, s print f or the 
+string print f command, and disp actually displays the string. 
+And to show you another example, sprint f six decimals percent 0.6f, a and 
+this should print pi with six decimal to, to six decimal places. 
+Finally, I was explaining a like so, a lot like this. 
+There, there are useful short cuts that you type format long. 
+It causes strings to by default to be assuage to a lot more decimal places to 
+and format short is a command that resources default of just printing a 
+small number of digits. Okay. 
+That's how you work with variables. Now, let's look at vectors and matrices. 
+Let's say, I want to assign a to a matrix, let me show you an example. 
+12; 34; 56, this generates a three by two matrix a whose first row is one two, 
+second row is three, four, the third row is five, six. 
+What the semicolon does is essentially say, go to the next row of the matrix. 
+There are other ways to type this, a=12;1 34;. 
+56 like so, and that's another equivalent way of 
+assigning a to be the values of this three by two matrix. 
+Similarly, you can assign vectors. So, v = 1,2,3. 
+this is actually a row vector, or this is a three by one vector, 
+right? This is a fat y vector, as a, excuse me, 
+not, this is a one by three matrix, 
+right? not three by one. 
+If I want to assign this to a column vector, 
+what I would do is instead do v1;2;3. = 1; 2; 3, and this will give me a three 
+by one, instead of one by three vector. So this would be a column vector. 
+So here's some more useful notation. I can all set v1:0.1:2. 
+= 1:0.1:2. What this does is it sets v to the bunch 
+of elements that start from one and increments in steps of 0.1 until you get 
+up to two. So, I might do this. 
+v is going to be this, you know, row vector or this is what? 
+A one by eleven matrix really that's 1.1, one, 1.1, 1.2, 1.3 and so on until we get 
+up to two. Now and I can also say that v1:6, = 1:6 
+and that set's v to v, you know, these numbers one through six. 
+Okay. Now, here are some other ways to 
+generating matrices. One's two by three, is a command that 
+generates a matrix that is a two by three matrix that is the matrix of all ones. 
+So, if I set c equals 2 times ones, two by three, this generates a two by three 
+matrix that is all twos. And this is, you can think of it as a 
+shorter way of writing this and c equals two, two, two, semicolon two, two, two, 
+which would also give you the same result. 
+The set w equals ones, one by three, so this is going to be a row vector or a you 
+know, a row of three ones. And similarly, you can also say w equals 
+zeroes one by three, and, this generates a matrix, a one by three matrix of all 
+zeroes. Just a couple more ways to generate 
+matrices. if I do w equals rand one by three, this 
+gives me a one by three matrix of all random numbers. 
+If I do rand three by three, this gives me a three by three matrix of 
+all random numbers drawn from the uniform distribution between zero and one. 
+So, every time I do this, I get a different set of random numbers drawn 
+uniformly between zero and one. For those of that who know what a 
+Gaussian random variable is or for those of you who know what a normal random 
+variable is, you can also set w equals rand n one by 
+three. and so these are going to be three values 
+drawn from a Gaussian distribution with mean zero and variant or standard 
+deviation equal to one. And you can set more complex things like w-6 = -6 plus 
+square root of ten times let's say, rand n one by ten thousand, and I'm going to 
+put a semicolon at the end because I don't really want this printed out. This 
+is going to be what, well, it's going to be a vector with a hundred thousand 
+excuse me, ten thousand elements. So, well, actually, you know what? 
+Lets, lets print it out. So this will generate a matrix like this 
+right? With 10,000 elements, so that's what w is. 
+And if I now plot the histogram of w with the hist command, I can now, and octaves 
+print hist command, you know, it takes a couple seconds to 
+bring this up, but this is a histogram of my random variable for w. 
+That was -6 plus zero, ten times this Gaussian random variable. 
+And I can plot a histogram with more buckets with more bins with say, 50 bins 
+and this is my histogram of Gaussian with 
+mean minus six, because I have minus six there, plus square root ten times this. 
+So, the the varians or, this, of, of this Gaussian random variable is ten over 
+standard diviation, this square root of ten, which is about what? 3.1. 
+Finally, one special command to generate a matrix, which is the eye command. 
+So, eye stands for this is maybe a pun on the word identity, but so I'm going to 
+set eye 4, this is the four by four identity matrix. 
+So, I equals eye 4, this gives me a four by four identity matrix. 
+And I equals eye 5 eye 6, that gives me a six by six identity matrix, and eye 3 is 
+the three by three identity matrix. Lastly, to wrap up this video there's one 
+more useful command which is the help command. 
+So you can type help eye, and this brings up the help function for the identity 
+matrix. hit q to quit. 
+And you can also type help rand, brings up documentation for the rand or the 
+random number generation function, or even help, help which shows you, you 
+know, help on the help function. So, those are the basic operations in 
+Octave. and with this you should be able to 
+generate a few matrices multiply, add things and, and use the basic operations 
+in Octave. In the next video, I'd like to start 
+talking about more sophisticated commands and how to move data around and to start 
+to process data in Octave.

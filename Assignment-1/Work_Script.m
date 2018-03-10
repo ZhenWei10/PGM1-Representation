@@ -1,0 +1,1 @@
+#Assignment-1cd '/Users/zhenwei/Desktop/Probability\ graphical\ models/Assignment-1'submit()
